@@ -4,7 +4,7 @@ React Native와 Expo를 학습하기 위해 만든 포켓몬 목록 앱입니다
 
 ## 앱 화면
 
-![포켓몬 목록 화면](assets/images/1.png)
+<img src="assets/images/1.png" alt="포켓몬 목록 화면" width="360" />
 
 ## 현재 구현된 기능
 
@@ -68,3 +68,4 @@ app/
 - [Expo SDK 54 문서](https://docs.expo.dev/versions/v54.0.0/)
 - [Expo Router 문서](https://docs.expo.dev/router/introduction/)
 - [PokeAPI](https://pokeapi.co/)
+- [React Native/Expo 튜토리얼 영상](https://www.youtube.com/watch?v=BUXnASp_WyQ)
