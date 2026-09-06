@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# ⚡ React Native/Expo 학습을 위해 구현한 튜토리얼 실습
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+React Native와 Expo를 학습하기 위해 만든 포켓몬 목록 앱입니다. [PokeAPI](https://pokeapi.co/)에서 포켓몬 데이터를 가져와 화면에 표시하고, Expo Router를 이용해 상세 화면으로 이동하는 과정을 실습합니다.
 
-## Get started
+## 앱 화면
 
-1. Install dependencies
+![포켓몬 목록 화면](assets/images/1.png)
 
-   ```bash
-   npm install
-   ```
+## 현재 구현된 기능
 
-2. Start the app
+- PokeAPI에서 포켓몬 20개 조회
+- 포켓몬 이름과 타입 표시
+- 포켓몬 타입별 카드 색상 적용
+- 포켓몬 앞모습과 뒷모습 이미지 표시
+- 포켓몬 항목 선택 시 상세 화면으로 이동
+- 상세 화면에서 전달받은 포켓몬 이름 표시
 
-   ```bash
-   npx expo start
-   ```
+## 학습 내용
 
-In the output, you'll find options to open the app in a
+- React Native 기본 컴포넌트와 스타일 작성
+- `useState`와 `useEffect`를 이용한 상태 및 생명주기 관리
+- `fetch`와 `Promise.all`을 이용한 API 데이터 조회
+- Expo Router의 파일 기반 라우팅
+- 화면 간 파라미터 전달과 `useLocalSearchParams` 사용
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## TODO
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 상세 화면에서 포켓몬 세부 정보 조회 및 표시
 
-## Get a fresh project
+## 기술 스택
 
-When you're ready, run:
+- Expo SDK 54
+- React Native 0.81
+- React 19
+- TypeScript
+- Expo Router
+
+## 실행 방법
+
+Node.js 20.19 이상이 필요합니다.
 
 ```bash
-npm run reset-project
+npm install
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+실행 후 터미널에 표시되는 안내에 따라 Expo Go, Android 에뮬레이터 또는 iOS 시뮬레이터에서 앱을 열 수 있습니다.
 
-## Learn more
+플랫폼별로 직접 실행하려면 다음 명령을 사용합니다.
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm run android
+npm run ios
+npm run web
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 주요 파일
 
-## Join the community
+```text
+app/
+├── _layout.tsx   # 화면 스택과 상세 화면 설정
+├── index.tsx     # 포켓몬 목록 화면
+└── details.tsx   # 포켓몬 상세 화면
+```
 
-Join our community of developers creating universal apps.
+## 참고 자료
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo SDK 54 문서](https://docs.expo.dev/versions/v54.0.0/)
+- [Expo Router 문서](https://docs.expo.dev/router/introduction/)
+- [PokeAPI](https://pokeapi.co/)
